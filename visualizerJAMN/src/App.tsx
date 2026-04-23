@@ -1,10 +1,13 @@
 import { APITester } from "./APITester";
 import "./index.css";
+import "./components/pointCloudReader"
 
 import logo from "./logo.svg";
 import reactLogo from "./react.svg";
+import PointCloudLoader from "./components/pointCloudReader";
 
 export function App() {
+  var res = PointCloudLoader();
   return (
     <div className="app">
       <div className="logo-container">
@@ -19,6 +22,7 @@ export function App() {
       <APITester />
     </div>
   );
+
 }
 
 export default App;
